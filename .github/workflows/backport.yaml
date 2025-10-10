@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-	echo "Bonjour"
+        echo "Bonjour"
         echo ${{ github.actor }}
         # This shows who triggered the workflow. For re-runs, the person hitting re-run is showed.
         echo ${{ github.triggering_actor }}
