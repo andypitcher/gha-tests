@@ -25,6 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
+        echo ${{ github.actor }}
+        # This shows who triggered the workflow. For re-runs, the person hitting re-run is showed.
+        echo ${{ github.triggering_actor }}
         cat /etc/passwd
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
