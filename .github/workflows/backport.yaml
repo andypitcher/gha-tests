@@ -22,7 +22,6 @@ jobs:
       # the pull_request event.
       contents: write
 
-    if: github.event.pull_request.merged == true && startsWith(github.event.label.name, 'cherry-pick/')
     runs-on: ubuntu-latest
     steps:
     - run: |
